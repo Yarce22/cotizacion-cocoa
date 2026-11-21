@@ -260,14 +260,3 @@ h1,h2,h3,h4{margin:0;line-height:1.02;letter-spacing:-.035em;font-weight:800}
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
   .marquee__track{animation:none}
 }
-
-/* PDF (print): only the quote section */
-@media print{
-  @page{margin:10mm}
-  body > *:not(main), main > *:not(#cotizacion), #quoteForm, #pdfBtn{display:none!important}
-  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .quote{border-radius:0}
-  .quote__grid{grid-template-columns:1fr!important}
-  .reveal{opacity:1!important;transform:none!important}
-  .bill div, .chosen li{break-inside:avoid}
-}

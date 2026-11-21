@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const state = {entrada:null,plato:null,postre:null};
   const fmt = n => new Intl.NumberFormat('es-CO',{maximumFractionDigits:0}).format(n);
 
-  // Quote extras: single source of truth for the page, the PDF and WhatsApp
+  // Quote extras: single source of truth for the page and WhatsApp (keep assets/docs PDF in sync)
   const EXTRAS = [
     {group:'Menaje y mobiliario', items:[
       {name:'Platos para torta', detail:'35 unidades', price:70000},
@@ -346,11 +346,6 @@ Fecha del evento: ${fmtDate(f.fecha.value)}
 Comentarios: ${f.comentarios.value.trim() || 'Ninguno'}`;
     window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
   });
-
-  /* ================= PDF ================= */
-  // Print dialog -> "Save as PDF"; counters jump to their final value so the PDF never shows mid-animation numbers
-  window.addEventListener('beforeprint', () => document.querySelectorAll('.js-count').forEach(el => { el.textContent = fmt(+el.dataset.to); }));
-  document.getElementById('pdfBtn').addEventListener('click', () => window.print());
 
   render(null);
   if (window.ScrollTrigger) window.addEventListener('load', () => ScrollTrigger.refresh());
