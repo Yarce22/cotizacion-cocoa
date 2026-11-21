@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {name:'Transporte y ayudante', detail:'', price:250000}
     ]},
     {group:'Servicio de atención', items:[
-      {name:'Servicio de inicio a fin del evento', detail:'2 meseros, 1 auxiliar de cocina, 1 chef', price:800000}
+      {name:'Servicio de inicio a fin del evento', detail:'2 meseros, 1 auxiliar de cocina, 1 chef, 1 bartender', price:800000}
     ]}
   ];
   const EXTRAS_TOTAL = EXTRAS.flatMap(g => g.items).reduce((s, i) => s + i.price, 0);
