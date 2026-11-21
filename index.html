@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cocoa · Cotización de menú para 35 personas</title>
+<meta name="description" content="Arma tu menú de 3 tiempos con Cocoa Pastelería & Catering y envíalo por WhatsApp.">
+<meta name="theme-color" content="#865D3C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/images/plato-1.jpeg">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#armar">Saltar al selector de menú</a>
+
+<!-- ============ HEADER ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a class="logo" href="#top" aria-label="Cocoa Pastelería y Catering, inicio">
+      <span class="logo__word" aria-hidden="true"><span class="co">co</span><span class="coa">coa</span></span>
+      <span class="logo__tag" aria-hidden="true">PASTELERÍA &amp; CATERING</span>
+    </a>
+    <a class="btn js-scroll" href="#armar">Armar mi menú</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ 1. HERO ============ -->
+<section class="hero" aria-labelledby="hero-title">
+  <svg class="hat" viewBox="0 0 120 100" aria-hidden="true"><path d="M30 92 33 55c-9 1-16-6-16-15 0-10 9-17 19-15 3-9 11-15 21-15 11 0 19 7 22 17l10-3c11-3 22 5 22 16 0 10-8 17-18 16-9 0-17-6-26-8-9-1-16 3-19 9m-6 27c8-9 18-13 26-11" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>
+  <div class="wrap hero__grid">
+    <div>
+      <span class="eyebrow hero-fade">Cotización privada · Cocoa</span>
+      <h1 class="hero__title" id="hero-title" data-split>Tu menú, diseñado para <em>este evento</em></h1>
+      <p class="hero__sub hero-fade">Cotización para <b>35 personas</b> · Menú de <b>3 tiempos</b></p>
+      <div class="hero__actions hero-fade">
+        <a class="btn js-scroll js-magnetic" href="#propuesta">Armar mi menú <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--ghost js-scroll" href="#cotizacion">Ver cotización</a>
+      </div>
+    </div>
+    <div class="hero__media media-ph" id="heroMedia">
+      <img src="assets/images/plato-1.jpeg" alt="Coq au Vin: pollo estofado en salsa de vino tinto sobre puré de papa" width="900" height="1125" fetchpriority="high" id="heroImg">
+      <div class="hero__badge"><span class="dot">35</span><span>Invitados<br><b>3 tiempos · Alta cocina</b></span></div>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">Scroll<span></span></div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Pastelería</span><span>Catering</span><span>Chef privado</span><span>Hecho a mano</span><span>Sabores en armonía</span>
+    <span>Pastelería</span><span>Catering</span><span>Chef privado</span><span>Hecho a mano</span><span>Sabores en armonía</span>
+  </div>
+</div>
+
+<!-- ============ 2. PROPUESTA ============ -->
+<section class="section proposal" id="propuesta" aria-labelledby="prop-title">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow reveal">Nuestra propuesta</span>
+      <h2 class="section__title reveal" id="prop-title">Dos menús pensados <em>en armonía</em></h2>
+      <p class="lead" data-words>Cada menú es el resultado de un cuidadoso estudio de sabores: la entrada, el plato fuerte y el postre fueron elegidos para complementarse y crear una experiencia completa. Te recomendamos disfrutarlos tal como fueron diseñados, pero si lo prefieres, puedes combinarlos a tu gusto.</p>
+    </div>
+
+    <div class="menus">
+      <article class="menu menu--intenso js-tilt" aria-labelledby="m1">
+        <div class="menu__glow" aria-hidden="true"></div>
+        <span class="menu__num">Menú 1</span>
+        <h3 class="menu__name" id="m1">Menú Intenso</h3>
+        <p class="menu__desc">Intenso y sofisticado</p>
+        <div class="menu__thumbs">
+          <div class="menu__thumb media-ph"><img src="assets/images/entrada-1.jpeg" alt="Ceviche de camarón" loading="lazy" width="400" height="533"></div>
+          <div class="menu__thumb media-ph"><img src="assets/images/plato-1.jpeg" alt="Coq au Vin" loading="lazy" width="400" height="533"></div>
+          <div class="menu__thumb media-ph"><img src="assets/images/postre-1.jpeg" alt="Pera confitada" loading="lazy" width="400" height="533"></div>
+        </div>
+        <ul class="menu__list">
+          <li><small>Entrada</small><strong>Ceviche de camarón</strong></li>
+          <li><small>Plato fuerte</small><strong>Coq au Vin</strong></li>
+          <li><small>Postre</small><strong>Pera confitada</strong></li>
+        </ul>
+        <button class="btn js-preset" type="button" data-preset="1">Elegir este menú <span class="arrow" aria-hidden="true">→</span></button>
+      </article>
+
+      <article class="menu menu--suave js-tilt" aria-labelledby="m2">
+        <div class="menu__glow" aria-hidden="true"></div>
+        <span class="menu__num">Menú 2</span>
+        <h3 class="menu__name" id="m2">Menú Suave</h3>
+        <p class="menu__desc">Suave y cremoso</p>
+        <div class="menu__thumbs">
+          <div class="menu__thumb media-ph"><img src="assets/images/entrada-2.jpeg" alt="Croqueta de falafel" loading="lazy" width="400" height="533"></div>
+          <div class="menu__thumb media-ph"><img src="assets/images/plato-2.jpeg" alt="Pollo estofado" loading="lazy" width="400" height="533"></div>
+          <div class="menu__thumb media-ph"><img src="assets/images/postre-2.jpeg" alt="Mini pavlova rellena" loading="lazy" width="400" height="533"></div>
+        </div>
+        <ul class="menu__list">
+          <li><small>Entrada</small><strong>Croqueta de falafel</strong></li>
+          <li><small>Plato fuerte</small><strong>Pollo estofado</strong></li>
+          <li><small>Postre</small><strong>Mini pavlova rellena</strong></li>
+        </ul>
+        <button class="btn js-preset" type="button" data-preset="2">Elegir este menú <span class="arrow" aria-hidden="true">→</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. ARMA TU MENÚ ============ -->
+<section class="section builder" id="armar" aria-labelledby="armar-title">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow reveal">Paso a paso</span>
+      <h2 class="section__title reveal" id="armar-title">Arma <em>tu menú</em></h2>
+      <p class="lead reveal" style="font-size:clamp(17px,2.2vw,21px)">Elige una opción por tiempo. Puedes mezclar libremente entre ambos menús.</p>
+    </div>
+
+    <div class="builder__grid">
+      <div>
+        <!-- ENTRADA -->
+        <fieldset class="course" style="border:0;padding:0;margin-inline:0">
+          <legend class="sr-only">Entrada: elige una opción</legend>
+          <div class="course__head reveal" aria-hidden="true">
+            <span class="course__n">01</span><h3 class="course__title">Entrada</h3>
+            <span class="course__hint">Elige 1 de 2</span>
+          </div>
+          <div class="cards">
+            <label class="dish" data-course="entrada" data-id="e1">
+              <input class="sr-only" type="radio" name="entrada" value="e1">
+              <div class="dish__media media-ph"><img src="assets/images/entrada-1.jpeg" alt="Ceviche de camarón servido en copa pequeña con crocante de tuile" loading="lazy" width="800" height="600"></div>
+              <div class="dish__body">
+                <span class="dish__num">Opción 1</span>
+                <h4 class="dish__name">Ceviche de camarón</h4>
+                <p class="dish__desc">Camarón fresco marinado en limón y naranja, con cebolla morada en julianas, mango en cubos, cilantro y un toque de ají dulce (opcional). Servido en copa pequeña con crocante de tuile.</p>
+                <span class="dish__pick"><span class="ring"></span><span class="pick-label">Elegir esta entrada</span></span>
+              </div>
+              <span class="dish__check" aria-hidden="true"><svg viewBox="0 0 24 24"><path pathLength="1" d="M5 12.5l4.2 4.2L19 7"/></svg></span>
+              <svg class="dish__frame" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" rx="24" pathLength="1"/></svg>
+            </label>
+            <label class="dish" data-course="entrada" data-id="e2">
+              <input class="sr-only" type="radio" name="entrada" value="e2">
+              <div class="dish__media media-ph"><img src="assets/images/entrada-2.jpeg" alt="Croqueta de falafel encostrada en ajonjolí sobre tzatziki" loading="lazy" width="800" height="600"></div>
+              <div class="dish__body">
+                <span class="dish__num">Opción 2</span>
+                <h4 class="dish__name">Croqueta de falafel</h4>
+                <span class="tag">🌱 Ideal para vegetarianos</span>
+                <p class="dish__desc">Croqueta de falafel encostrada en ajonjolí, sobre una base de tzatziki, con cama de mango y pepino encurtido.</p>
+                <span class="dish__pick"><span class="ring"></span><span class="pick-label">Elegir esta entrada</span></span>
+              </div>
+              <span class="dish__check" aria-hidden="true"><svg viewBox="0 0 24 24"><path pathLength="1" d="M5 12.5l4.2 4.2L19 7"/></svg></span>
+              <svg class="dish__frame" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" rx="24" pathLength="1"/></svg>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- PLATO FUERTE -->
+        <fieldset class="course" style="border:0;padding:0;margin-inline:0">
+          <legend class="sr-only">Plato fuerte: elige una opción</legend>
+          <div class="course__head reveal" aria-hidden="true">
+            <span class="course__n">02</span><h3 class="course__title">Plato fuerte</h3>
+            <span class="course__hint">Elige 1 de 2</span>
+          </div>
+          <div class="cards">
+            <label class="dish dish--wine" data-course="plato" data-id="p1">
+              <input class="sr-only" type="radio" name="plato" value="p1">
+              <div class="dish__media media-ph"><img src="assets/images/plato-1.jpeg" alt="Coq au Vin con salsa de vino tinto, puré de papa, espárragos y zanahoria glaseada" loading="lazy" width="800" height="600"></div>
+              <div class="dish__body">
+                <span class="dish__num">Opción 1</span>
+                <h4 class="dish__name">Coq au Vin</h4>
+                <span class="tag tag--wine">Salsa de vino tinto</span>
+                <p class="dish__desc">Pollo dorado y estofado lentamente, sobre cama de puré de papa, acompañado de espárragos y zanahoria glaseados, con una salsa de vino tinto reducida, oscura y brillante, con champiñones.</p>
+                <p class="dish__ideal"><b>Ideal para:</b> personas que aman el sabor fuerte y sofisticado.</p>
+                <span class="dish__pick"><span class="ring"></span><span class="pick-label">Elegir este plato</span></span>
+              </div>
+              <span class="dish__check" aria-hidden="true"><svg viewBox="0 0 24 24"><path pathLength="1" d="M5 12.5l4.2 4.2L19 7"/></svg></span>
+              <svg class="dish__frame" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" rx="24" pathLength="1"/></svg>
+            </label>
+            <label class="dish" data-course="plato" data-id="p2">
+              <input class="sr-only" type="radio" name="plato" value="p2">
+              <div class="dish__media media-ph"><img src="assets/images/plato-2.jpeg" alt="Pollo estofado con salsa cremosa de champiñones sobre puré de papa criolla" loading="lazy" width="800" height="600"></div>
+              <div class="dish__body">
+                <span class="dish__num">Opción 2</span>
+                <h4 class="dish__name">Pollo estofado</h4>
+                <p class="dish__desc">Pollo dorado y jugoso en cocción lenta, sobre cama de puré de papa criolla, acompañado de espárragos y zanahoria baby, con una salsa clara y cremosa de champiñones, fondo de pollo, mantequilla y crema.</p>
+                <p class="dish__ideal"><b>Ideal para:</b> personas que prefieren sabores suaves y cremosos.</p>
+                <span class="dish__pick"><span class="ring"></span><span class="pick-label">Elegir este plato</span></span>
+              </div>
+              <span class="dish__check" aria-hidden="true"><svg viewBox="0 0 24 24"><path pathLength="1" d="M5 12.5l4.2 4.2L19 7"/></svg></span>
+              <svg class="dish__frame" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" rx="24" pathLength="1"/></svg>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- POSTRE -->
+        <fieldset class="course" style="border:0;padding:0;margin-inline:0">
+          <legend class="sr-only">Postre: elige una opción</legend>
+          <div class="course__head reveal" aria-hidden="true">
+            <span class="course__n">03</span><h3 class="course__title">Postre</h3>
+            <span class="course__hint">Elige 1 de 2</span>
+          </div>
+          <div class="cards">
+            <label class="dish" data-course="postre" data-id="d1">
+              <input class="sr-only" type="radio" name="postre" value="d1">
+              <div class="dish__media media-ph"><img src="assets/images/postre-1.jpeg" alt="Pera confitada con queso de cabra, arándanos y nuez" loading="lazy" width="800" height="600"></div>
+              <div class="dish__body">
+                <span class="dish__num">Opción 1</span>
+                <h4 class="dish__name">Pera confitada</h4>
+                <p class="dish__desc">Pera confitada con queso de cabra, arándanos y nuez.</p>
+                <span class="dish__pick"><span class="ring"></span><span class="pick-label">Elegir este postre</span></span>
+              </div>
+              <span class="dish__check" aria-hidden="true"><svg viewBox="0 0 24 24"><path pathLength="1" d="M5 12.5l4.2 4.2L19 7"/></svg></span>
+              <svg class="dish__frame" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" rx="24" pathLength="1"/></svg>
+            </label>
+            <label class="dish" data-course="postre" data-id="d2">
+              <input class="sr-only" type="radio" name="postre" value="d2">
+              <div class="dish__media media-ph"><img src="assets/images/postre-2.jpeg" alt="Mini pavlova rellena de crema y frutas frescas" loading="lazy" width="800" height="600"></div>
+              <div class="dish__body">
+                <span class="dish__num">Opción 2</span>
+                <h4 class="dish__name">Mini pavlova rellena</h4>
+                <p class="dish__desc">Pavlova crujiente por fuera y suave por dentro, rellena con crema delicada, frutas frescas y un toque dulce que la hace ligera y elegante.</p>
+                <p class="dish__ideal"><b>Ideal para:</b> personas a las que les gusta combinar texturas crujientes y suaves.</p>
+                <span class="dish__pick"><span class="ring"></span><span class="pick-label">Elegir este postre</span></span>
+              </div>
+              <span class="dish__check" aria-hidden="true"><svg viewBox="0 0 24 24"><path pathLength="1" d="M5 12.5l4.2 4.2L19 7"/></svg></span>
+              <svg class="dish__frame" aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" rx="24" pathLength="1"/></svg>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- Resumen sticky desktop -->
+      <aside class="summary" aria-label="Resumen de tu menú">
+        <div class="panel">
+          <p class="panel__title">Tu menú</p>
+          <ul class="rows" data-summary-rows></ul>
+          <div aria-live="polite" data-status-wrap></div>
+          <div class="panel__price">
+            <div><span>Valor por persona</span><span>$90.000</span></div>
+            <div><span>Personas</span><span>35</span></div>
+          </div>
+          <div class="panel__total"><span>Total menú</span><b>$<span class="js-count" data-to="3150000">0</span></b></div>
+          <a class="btn js-scroll" href="#cotizacion">Ir a la cotización <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. RESUMEN Y COTIZACIÓN ============ -->
+<section class="section quote" id="cotizacion" aria-labelledby="quote-title">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow reveal">Resumen y cotización</span>
+      <h2 class="section__title reveal" id="quote-title">Tu menú, <em>listo para confirmar</em></h2>
+    </div>
+
+    <div class="quote__grid">
+      <div class="reveal">
+        <ul class="chosen" data-chosen></ul>
+        <div aria-live="polite" data-status-wrap></div>
+        <div class="bill" data-bill></div>
+        <div class="bill__total">
+          <small>Total cotización</small>
+          <b><span class="cur">$</span><span class="js-count" data-grand data-to="0">0</span> <span style="font-size:.32em;font-weight:500;letter-spacing:0">COP</span></b>
+        </div>
+        <p class="note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6M12 7.5v.01"/></svg>
+          <span>Este valor incluye el menú, el menaje, el mobiliario, el transporte y el servicio de atención de inicio a fin del evento.</span>
+        </p>
+        <button class="btn btn--pdf" id="pdfBtn" type="button">Descargar cotización en PDF</button>
+      </div>
+
+      <form class="form reveal" id="quoteForm" novalidate>
+        <h3>Confirma por WhatsApp</h3>
+        <p class="help">Estos datos son opcionales, pero nos ayudan a preparar todo mejor.</p>
+        <div class="field">
+          <label for="fName">Nombre <span>(opcional)</span></label>
+          <input id="fName" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre">
+        </div>
+        <div class="field">
+          <label for="fDate">Fecha del evento <span>(opcional)</span></label>
+          <input id="fDate" name="fecha" type="date">
+        </div>
+        <div class="field">
+          <label for="fNotes">Comentarios <span>(alergias, observaciones)</span></label>
+          <textarea id="fNotes" name="comentarios" placeholder="Ej.: 2 invitados alérgicos al maní"></textarea>
+        </div>
+        <button class="btn btn--wa js-magnetic" id="sendBtn" type="submit" disabled aria-describedby="formStatus">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+          Enviar mi elección por WhatsApp
+        </button>
+        <p class="form__status" id="formStatus" aria-live="polite">Elige los 3 tiempos para continuar.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ 6. FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div style="display:grid;gap:18px">
+      <span class="logo logo--light" aria-label="Cocoa Pastelería y Catering">
+        <span class="logo__word" style="font-size:44px" aria-hidden="true"><span class="co">co</span><span class="coa">coa</span></span>
+        <span class="logo__tag" style="font-size:9px" aria-hidden="true">PASTELERÍA &amp; CATERING</span>
+      </span>
+      <p>La cotización incluye únicamente los platos y el montaje en el evento. No incluye costos de servicio (servicio a la mesa).</p>
+    </div>
+    <small>© <span id="year"></span> Cocoa · Pastelería, catering y chef privado</small>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/573028459802?text=Hola%20Cocoa%20%F0%9F%91%8B%20Tengo%20una%20pregunta%20sobre%20la%20cotizaci%C3%B3n%20de%20mi%20evento." target="_blank" rel="noopener" aria-label="Escribir a Cocoa por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<!-- Barra inferior móvil -->
+<div class="mbar" id="mbar" role="region" aria-label="Resumen rápido de tu menú">
+  <div class="mbar__slots" data-mslots></div>
+  <div class="mbar__txt"><small data-mstatus>0 de 3 tiempos</small><b>$3.150.000</b></div>
+  <a class="btn js-scroll" href="#cotizacion">Continuar</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
