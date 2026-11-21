@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   /* ================= DATOS ================= */
   const WA_NUMBER = '573028459802';
-  const PRICE = 90000, PEOPLE = 35, TOTAL = PRICE * PEOPLE;
+  const PRICE = 138000, PEOPLE = 35, TOTAL = PRICE * PEOPLE;
   const DISHES = {
     e1:{name:'Ceviche de camarón',img:'assets/images/entrada-1.jpeg'},
     e2:{name:'Croqueta de falafel',img:'assets/images/entrada-2.jpeg'},
@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Quote extras: single source of truth for the page and WhatsApp (keep assets/docs PDF in sync)
   const EXTRAS = [
+    {group:'Bebidas', items:[
+      {name:'Bebidas', detail:'35 personas', price:200000}
+    ]},
     {group:'Menaje y mobiliario', items:[
       {name:'Platos para torta', detail:'35 unidades', price:70000},
       {name:'Platos', detail:'35 unidades', price:70000},
@@ -39,12 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
       {name:'Transporte y ayudante', detail:'', price:250000}
     ]},
     {group:'Servicio de atención', items:[
-      {name:'Servicio de inicio a fin del evento', detail:'2 meseros, 1 auxiliar de cocina, 1 chef', price:500000}
+      {name:'Servicio de inicio a fin del evento', detail:'2 meseros, 1 auxiliar de cocina, 1 chef', price:800000}
     ]}
   ];
   const EXTRAS_TOTAL = EXTRAS.flatMap(g => g.items).reduce((s, i) => s + i.price, 0);
   const GRAND_TOTAL = TOTAL + EXTRAS_TOTAL;
-  console.assert(EXTRAS_TOTAL === 1672000 && GRAND_TOTAL === 4822000, 'Quote totals changed', EXTRAS_TOTAL, GRAND_TOTAL);
+  console.assert(EXTRAS_TOTAL === 2172000 && GRAND_TOTAL === 7002000, 'Quote totals changed', EXTRAS_TOTAL, GRAND_TOTAL);
 
   const billRow = (name, detail, price) =>
     `<div><span>${name}${detail ? `<small>${detail}</small>` : ''}</span><b>$${fmt(price)}</b></div>`;
